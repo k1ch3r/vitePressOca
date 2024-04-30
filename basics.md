@@ -10,7 +10,6 @@ We talked about  packages and folders and took  a look at the prebuilts in the j
 Note: OCA will ask about rules for imports/when you need to import.
 Your projects file structure should match the package syntax.
 
-
 ```path
 ./com/mycompany/utils/CustomUtility.java 
 ```
