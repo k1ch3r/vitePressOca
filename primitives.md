@@ -2,7 +2,7 @@
 
 ## boolean
 
-Our standard logical type. Can only be true or false.
+Our standard logical type. Can only be true or false. Is **not** meant to be casted from or into in java!
 
 ```java
 boolean isSet = false;
@@ -24,8 +24,38 @@ Our integer number types. They are all two's complement and only differ in size.
 
 ## float & double
 
-These are our floating point number types. They represent 32 and 64-bit IEEE 754 values respectively.
+These are our floating point number types. They represent 32 and 64-bit IEEE 754 values respectively. We basically use double unless we really want to save memory for some reason.
 
 ## char
 
-Represents a single 16-bit Unicode character. Minimum value '\u0000' (or 0) and maximum value '\uffff' (or 65,535 inclusive).
+Represents a single 16-bit Unicode character. Minimum value '\u0000' (or 0) and maximum value '\uffff' (or 65,535 inclusive). This is a bit different than the char type in other languages like C or C++.
+
+## casting primitives
+
+We can (and will need to) cast our primitives using the following syntax:
+
+```java
+
+// Widening aka upcasting. Will be done implicitly if we dont specify:
+int x = 12;
+double xAccurate = (double) x;
+
+// Narrowing aka downcasting. Needs to be done explicitly because it can lead to information loss.
+double muchInfo = 9.12342345;
+int lessInfo = (int) muchInfo;
+
+```
+
+::: details
+
+```java
+// We can obviously cast results of longer evalutions like this as well:
+int algoResult = (int) someMethodReturningAFloat(((33 * x)%4))
+
+// We could also cast a char into an int like this, can be used when you wanna iterate over the alphabet or something:
+char myChar = 'A';
+int convertedChar = (int) myChar; // convertedChar will be 65 here because thats the value of A
+
+```
+
+:::
