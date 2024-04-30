@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  base: '/vitePressOca/',
+  base: "/vitePressOca/",
   title: "oca docs",
   description: "tryna document my oca prep",
   themeConfig: {
