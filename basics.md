@@ -1,4 +1,4 @@
-# Intro: background and bascis
+# Intro: background and basics
 
 ## Day 1 prep
 
@@ -35,7 +35,7 @@ public class MyApp {
 }
 ```
 
-## Classpath (cp)
+## Classpath (cp) option
 
 We also used the (terrible) cp options for the java and javac commands... You will hopefully never ever do this and just use maven or gradle instead!
 
@@ -54,7 +54,26 @@ fun.printFun();
 
 and the directorty two above your src containing the Main.java contains a compiled (class) file named fun and containing a printFun() function.
 
-Also take note of these two details if you actually care:
+::: details
 
-- the cp path is actually a list of the current root and the external code.
-- we wrapped the path list with "" because otherwise cmd will interpret the ; as end of command.
+- The cp path is actually a list of paths to the current root and the external code path. This is needed **only if** you want to include files from the current operating directory **and** are not in the projects root. You can list any number of paths here if you want to. You don't.
+- We wrapped the path list with "" because otherwise cmd will interpret the ; as end of command.
+
+:::
+
+## Setting shell options
+
+The options that you can set when using java in a shell are actually just the arguments array of our main method under the hood.
+
+```cmd
+java Classname option
+```
+
+This option can be referenced with
+
+```java
+args[0]
+
+```
+
+you dont need to wrap your options in *""* if they are single word strings.
