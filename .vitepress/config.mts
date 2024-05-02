@@ -20,6 +20,8 @@ export default defineConfig({
           // { text: 'Runtime API Examples', link: '/api-examples' }
           { text: 'Intro & Basics', link: '/basics' },
           { text: 'Primitive Data Types', link: '/primitives' },
+          { text: 'Reference Types', link: '/reference' },
+          { text: 'Code Formatting & Docs', link: '/format' },
         ]
       }
     ],
