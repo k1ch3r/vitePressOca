@@ -1,5 +1,7 @@
 # Primitive Data Types in Java
 
+The official Java SE Specifications describe Types [here](https://docs.oracle.com/javase/specs/jls/se7/html/jls-4.html);
+
 ## boolean
 
 Our standard logical type. Can only be true or false. Is **not** meant to be casted from or into in java!
@@ -58,4 +60,5 @@ int convertedChar = (int) myChar; // convertedChar will be 65 here because thats
 
 ```
 
+Bonus fact: Technically *null* is also it's own type. You cannot set a variable type to null or cast it into one though. The only thing you can do with null type values is widen them.
 :::
