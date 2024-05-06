@@ -67,6 +67,11 @@ Using scientific notation is relatively common and can be done with less care th
 
 Represents a single 16-bit Unicode character. Minimum value '\u0000' (or 0) and maximum value '\uffff' (or 65,535 inclusive). This is a bit different than the char type in other languages like C or C++.
 
+```java
+char letter = 'A';
+char unicode = '\u0041'; // equivalent to 'A'
+```
+
 ## casting primitives
 
 We can (and will need to) cast our primitives using the following syntax:
