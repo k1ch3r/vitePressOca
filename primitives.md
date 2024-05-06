@@ -24,9 +24,44 @@ Our integer number types. They are all two's complement and only differ in size.
 | long          | 64-bit        | -2^63     | (2^63)-1    |
 :::
 
+:::tip
+If in doubt just use int. Only use different types when you have a reason.
+:::
+
+Integer types can use non decimal number formats as well. Here are some examples:
+
+```java
+int decimal = 100;
+int hexadecimal = 0x64; // equivalent to 100 in decimal.
+int binary = 0b1100100; // equivalent to 100 in decimal
+int octal = 0144; // equivalent to 100 in decimal
+```
+
+:::warning
+The values will all be treated as decimal integer values here. They are all 100. If we want to print them in other number fromats we have to use methods to do it.
+:::
+
+```java
+int value = 100;
+
+System.out.println(Integer.toBinaryString(value)); // prints "1100100"
+System.out.println(Integer.toOctalString(value)); // prints "144"
+System.out.println(Integer.toHexString(value)); // prints "64"
+```
+
 ## float & double
 
 These are our floating point number types. They represent 32 and 64-bit IEEE 754 values respectively. We basically use double unless we really want to save memory for some reason.
+
+We can use literals and scientific notation for floating point types.
+
+```java
+double decimal = 3.14;
+double scientific = 3.14e-2; // equivalent to 0.0314
+float myFloat = 3.14f; // 3.14F works just as well. If we dont use the correct literal when setting up floats we get errors. We should almost always just use doubles.
+```
+
+Using scientific notation is relatively common and can be done with less care than using integer literals.
 
 ## char
 
@@ -44,7 +79,7 @@ double xAccurate = (double) x;
 
 // Narrowing aka downcasting. Needs to be done explicitly because it can lead to information loss.
 double muchInfo = 9.12342345;
-int lessInfo = (int) muchInfo;
+int lessInfo = (int) muchInfo; // this is 9.
 
 ```
 
