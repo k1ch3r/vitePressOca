@@ -10,9 +10,9 @@ hero:
     - theme: brand
       text: Jump in
       link: /basics
-    - theme: alt
-      text: API Examples
-      link: /api-examples
+    # - theme: alt
+    #   text: API Examples
+    #   link: /api-examples
 
 features:
   - title: Feedback?
