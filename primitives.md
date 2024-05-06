@@ -110,5 +110,5 @@ int convertedChar = (int) myChar; // convertedChar will be 65 here because thats
 
 ```
 
-Bonus fact: Technically *null* is also it's own type. You cannot set a variable type to null or cast it into one though. The only thing you can do with null type values is widen them.
+Bonus fact: Technically *null* is also it's own type. You cannot set a variable type to null or cast it into one though. he only thing you can do with null is [assign it to a variable of a reference type](/reference.md#default-values).
 :::
