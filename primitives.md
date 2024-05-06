@@ -41,7 +41,7 @@ int octal = 0144; // equivalent to 100 in decimal
 The values will all be treated as decimal integer values here. They are all 100. If we want to print them in other number fromats we have to use methods to do it.
 
 **NOTE the 0144 example above!**
-Any leading 0 makes java interpret an int as octal value. This can lead to misunderstanding/mistakes!
+Any leading 0 makes java interpret an int as octal value. This can lead to misunderstandings/mistakes!
 :::
 
 ```java
