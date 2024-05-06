@@ -58,10 +58,17 @@ We can use literals and scientific notation for floating point types.
 ```java
 double decimal = 3.14;
 double scientific = 3.14e-2; // equivalent to 0.0314
-float myFloat = 3.14f; // 3.14F works just as well. If we dont use the correct literal when setting up floats we get errors. We should almost always just use doubles.
+float myFloat = 3.14f; // 3.14F works just as well. See warning and tip below!
 ```
 
 Using scientific notation is relatively common and can be done with less care than using integer literals.
+
+:::warning
+Floats only work if we use the correct literal for setting the value like we did in the example above. myFloat = 3.14f and myFloat = 3.14F works. float myFloat = 3.14 throws an error!
+:::
+:::tip
+If in doubt use double. Only use float when you have a good reason.
+:::
 
 ## char
 
