@@ -15,6 +15,6 @@ hero:
       link: /api-examples
 
 features:
-  - title: Feature A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+  - title: Feedback?
+    details: You can make suggestions through my <a href="https://github.com/k1ch3r/vitePressOca">github repo</a> using pull requests or issues.
 ---

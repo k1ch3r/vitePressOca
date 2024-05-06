@@ -28,14 +28,17 @@ Our integer number types. They are all two's complement and only differ in size.
 If in doubt just use int. Only use different types when you have a reason.
 :::
 
-Integer types can use non decimal number formats as well. Here are some examples:
+Integer types can use non decimal number formats as well.
 
 ```java
-int decimal = 100;
+int decimal = 10_0; // we can use underscores in our source in between any digits of number values. they do nothing.
 int hexadecimal = 0x64; // equivalent to 100 in decimal.
 int binary = 0b1100100; // equivalent to 100 in decimal
 int octal = 0144; // equivalent to 100 in decimal
+long longLiteral = 123L; // a long literal. works with capital L or lower case l.
 ```
+
+**There are no special characters for short, byte or int literals.**
 
 :::warning
 The values will all be treated as decimal integer values here. They are all 100. If we want to print them in other number fromats we have to use methods to do it.
@@ -62,6 +65,7 @@ We can use literals and scientific notation for floating point types.
 double decimal = 3.14;
 double scientific = 3.14e-2; // equivalent to 0.0314
 float myFloat = 3.14f; // 3.14F works just as well. See warning and tip below!
+double uselessSyntax = 4.2d; // literal d and D work for double
 ```
 
 Using scientific notation is relatively common and can be done with less care than using integer literals.
