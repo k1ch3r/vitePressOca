@@ -6,3 +6,5 @@
 - snippets/templates: psvm, sout etc
 
 - access modifiers: scope, lifetime, private, public, static, final, ...
+
+- classes, methods, modularity, patterns?!
