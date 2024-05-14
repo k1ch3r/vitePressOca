@@ -22,6 +22,9 @@ export default defineConfig({
           { text: 'Code Formatting & Docs', link: '/format' },
           { text: 'Primitive Data Types', link: '/primitives' },
           { text: 'Reference Types', link: '/reference' },
+          { text: 'Control Structures: Logic', link: '/controlLogic' },
+          // { text: 'Control Structures: Repetition', link: '/reference' },
+          // { text: 'Scope', link: '/scope' },
         ]
       }
     ],
