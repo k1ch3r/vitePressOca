@@ -62,7 +62,7 @@ if(false) {
 
 ```
 
-Let's make a "else exclusive or" condition using what we learned before:
+Let's make an "else exclusive or" condition using what we learned before:
 
 ```java
 if(a < 10) {
