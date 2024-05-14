@@ -28,3 +28,8 @@
         }
     }
     ```
+
+- array namenskonvetion is plural substantiv btw
+- enhanced for loop aka erweiterte for schleife soll "vierter" loop on java sein is dieser shizm:
+
+for(int zahl : zahlen)
