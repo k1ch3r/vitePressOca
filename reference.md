@@ -25,7 +25,20 @@ In Java Arrays are a *collection of elements **of the same type***. They are dec
 int[] myArray = new int[5];
 ```
 
-Their length **has to** be defined when declaring them and *cannot* be changed afterwards. If you don't set specific values for elements when declaring an array they are given a **default value of null**.
+Their length **has to** be defined when declaring them and *cannot* be changed afterwards. If you don't set specific values for elements when declaring an array they are given a **default value**. If the array is holding primitives their default value is whatever all bits off is interpreted as. If it is holding reference types their default values are set to **null**.
+
+Here's a list of default values for primitives:
+
+| Primitive Type | Default Value |
+| -------------- | ------------- |
+| byte           | 0             |
+| short          | 0             |
+| int            | 0             |
+| long           | 0L            |
+| float          | 0.0f          |
+| double         | 0.0d          |
+| char           | '\u0000'      |
+| boolean        | false         |
 
 tbd in own section: anonymous arrays.
 
