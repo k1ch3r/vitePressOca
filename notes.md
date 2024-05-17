@@ -33,3 +33,32 @@
 - enhanced for loop aka erweiterte for schleife soll "vierter" loop on java sein is dieser shizm:
 
 for(int zahl : zahlen)
+
+gippity about reference types... i know less than ever right now bruh.
+
+```
+    The distinction between reference types and primitive types in Java is essential for understanding how variables behave and how memory management works in the language. While it's true that both types ultimately involve memory management, their behavior and usage patterns differ significantly, and understanding these differences is crucial for writing correct and efficient Java code.
+
+    Here's why the distinction matters:
+
+    Memory Management and Access Patterns:
+
+    Primitive types: Values of primitive types are stored directly in memory, and their access is straightforward. They are typically allocated on the stack, which is faster but limited in size. Primitive types have fixed sizes, allowing the compiler and runtime to efficiently manage their memory.
+    Reference types: Objects of reference types are stored on the heap, and variables hold references (memory addresses) to these objects. This indirection introduces additional overhead, both in terms of memory usage and access time. Understanding reference types helps developers grasp concepts like object lifecycle, garbage collection, and potential memory leaks.
+    Behavior and Mutability:
+
+    Primitive types: Primitive values are immutable; once assigned, their values cannot be changed. Operations on primitive types involve copying the value itself.
+    Reference types: Objects are mutable, meaning their state can be modified after creation. Variables holding references to objects allow manipulation of the object's state through method calls and property modifications.
+    Pass-by-Value vs. Pass-by-Reference:
+
+    Primitive types: Java uses pass-by-value semantics for primitive types. When passing a primitive variable to a method, a copy of its value is passed.
+    Reference types: Java also uses pass-by-value, but it's essential to understand that when passing a reference variable to a method, a copy of the reference (memory address) is passed, not the object itself. This can lead to confusion, especially when modifying objects within methods.
+    While it's true that Java's memory management system handles both primitive and reference types, understanding the differences between them helps developers write more efficient, bug-free, and maintainable code. It's not about caring which type is used but understanding their respective behaviors and implications for writing robust software.
+
+```
+
+- wat is java reflect?!
+- native modifier
+- er meint wie verschiedene ref types kopieren/pointer teilen handlen ist unterschiedlich und muss man auswendig lernen... panik xD
+- binary search returns be weird?! wieso verschiedene negative zahlen fuer not found kekw.. ok anscheinend ist binary search fuer sortierte sachen und - heisst not found und die zahl wo sie sein muesste wenn sie drin waere?!
+- die ... syntax muss bekannt sein fuer oca meint er?! -> nimmt ohne literalschreibtweise wertelisten?!
