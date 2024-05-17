@@ -27,7 +27,8 @@ int[] myArray = new int[5];
 
 Their length **has to** be defined when declaring them and *cannot* be changed afterwards. If you don't set specific values for elements when declaring an array they are given a **default value**. If the array is holding primitives their default value is whatever all bits off is interpreted as. If it is holding reference types their default values are set to **null**.
 
-Here's a list of default values for primitives:
+:::details
+Here's a list of default values for primitives as a refresher:
 
 | Primitive Type | Default Value |
 | -------------- | ------------- |
@@ -39,6 +40,7 @@ Here's a list of default values for primitives:
 | double         | 0.0d          |
 | char           | '\u0000'      |
 | boolean        | false         |
+:::
 
 tbd in own section: anonymous arrays.
 
