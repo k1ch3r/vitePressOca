@@ -138,3 +138,23 @@ Bonus fact: Technically *null* is also it's own type. You cannot set a variable 
 
 The order of number types is this:
 byte < short < int < long < float < double
+
+## default values
+
+We will talk about when primitive default values are used and how to handle that behaviour in more detail later.
+:::warning
+i still need to do that. i should link it here once i did!
+:::
+
+For now we can just take note of the default values for our primitive types briefly:
+
+| Primitive Type | Default Value |
+| -------------- | ------------- |
+| byte           | 0             |
+| short          | 0             |
+| int            | 0             |
+| long           | 0L            |
+| float          | 0.0f          |
+| double         | 0.0d          |
+| char           | '\u0000'      |
+| boolean        | false         |
