@@ -62,3 +62,8 @@ gippity about reference types... i know less than ever right now bruh.
 - er meint wie verschiedene ref types kopieren/pointer teilen handlen ist unterschiedlich und muss man auswendig lernen... panik xD
 - binary search returns be weird?! wieso verschiedene negative zahlen fuer not found kekw.. ok anscheinend ist binary search fuer sortierte sachen und - heisst not found und die zahl wo sie sein muesste wenn sie drin waere?!
 - die ... syntax muss bekannt sein fuer oca meint er?! -> nimmt ohne literalschreibtweise wertelisten?!
+- bei varargs in methodendeklarationen muss man auf die reihenfolge achten: hinter dem varargs darf kein anderer paramteter mit , getrennt folgen!
+- er meint es kommen aufgaben mit objekte zaehlen im kontext string pool new konkatenation bla
+- String methoden
+- order of operations
+- substring ist inklusive startindex exklusive endindex?!

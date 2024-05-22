@@ -65,6 +65,15 @@ It is good practice to make a multi line **Beginning Comment** for our source fi
 
 todo.
 
+- packages (com.apple.quicktime.v2)
+- classes (ImageSprite)
+- interfaces are capitalized as well
+- objects are NOT!
+- methods (getBackground());
+- constants (static final int MAX_WIDTH = 999)
+
+[okay boomer](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html)
+
 ## Annotation
 
 todo.

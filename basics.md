@@ -1,4 +1,4 @@
-# Intro: background and basics
+# Intro: Background and Basics
 
 ## Day 1 prep
 

@@ -25,6 +25,7 @@ export default defineConfig({
           { text: 'Control Structures: Logic', link: '/controlLogic' },
           // { text: 'Control Structures: Repetition', link: '/reference' },
           // { text: 'Scope', link: '/scope' },
+          { text: 'Strings', link: '/strings' },
           { text: 'Arrays', link: '/arrays' },
 
         ]

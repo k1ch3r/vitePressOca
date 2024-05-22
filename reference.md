@@ -17,6 +17,12 @@ One of the first reference types to get familiar with is the String type. String
 In java String are **always** delimited with **double quotes**! Single quotes are used for char type values **only**!
 :::
 
+```java
+String exampleStr = "Hello, World!";  // correct
+String wrongSyntax = 'This throws!' // does not work in java!
+
+```
+
 ## Arrays
 
 In Java Arrays are a *collection of elements **of the same type***. They are declared using the new keyword like this:
