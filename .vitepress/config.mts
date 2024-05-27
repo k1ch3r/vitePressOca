@@ -24,9 +24,12 @@ export default defineConfig({
           { text: 'Reference Types', link: '/reference' },
           { text: 'Control Structures: Logic', link: '/controlLogic' },
           // { text: 'Control Structures: Repetition', link: '/reference' },
-          // { text: 'Scope', link: '/scope' },
+          { text: 'Scope', link: '/scope' },
           { text: 'Strings', link: '/strings' },
+          // { text: 'StringBuilder', link: '/stringBuilder' },
           { text: 'Arrays', link: '/arrays' },
+          { text: 'ArrayLists', link: '/arraylists' },
+          { text: 'java.time', link: '/dates' },
 
         ]
       }

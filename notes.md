@@ -67,3 +67,12 @@ gippity about reference types... i know less than ever right now bruh.
 - String methoden
 - order of operations
 - substring ist inklusive startindex exklusive endindex?!
+- stringbuilder makes space for 16 chars initially and current lentgh + weird amount calculated in some way by default ?!?!?! idk im confused (cxapacity)
+- stringbuilder methoden (konstruktor mit uebergabe, toString, length, append, charAt, insert, bla)
+- arraylist
+- wrapper klassen?!
+- (generics) nicht fuer oca relevant
+- arrayname.length vs .length() vs arraylistenname.size()
+- LocalTime klasse, LocalDate, ISO_LOCAL_DATE, bla
+- LocalDate.of()
+- LocalDate hat spezielle konstruktoren und throwt mit new syntax!? -> folien
