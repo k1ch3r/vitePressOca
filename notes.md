@@ -76,3 +76,9 @@ gippity about reference types... i know less than ever right now bruh.
 - LocalTime klasse, LocalDate, ISO_LOCAL_DATE, bla
 - LocalDate.of()
 - LocalDate hat spezielle konstruktoren und throwt mit new syntax!? -> folien
+- hph buch sagt zu attributen "datenlemente" dafuq
+- todo switch. Incompatible types. Found: 'boolean', required: 'char, byte, short, int, Character, Byte, Short, Integer, String, or an enum'
+  ^ => float double bool nonstring/enum objekte bleh geht nicht
+- jede klasse ist per default "extends Object"
+- die liefert zb equals getClass toString (vermutlich auch den default kosntruktor?!)
+- daher auch @Override bei eigener toString ?!
