@@ -89,7 +89,6 @@ While it's true that Java's memory management system handles both primitive and 
 - switch geht wie bereits erwaehnt nicht fuer referenztypen ausser enum und string, also hier nicht.
 - '\s' escape sequences are not supported at language level '8' dafuq?
 
-
 ```java
 "throwt obv... : \n" +
 "C:\\Users\\Student\\Documents\\gfn\\LF-ZQ1a_OCA\\OCA\src\\d2024_06_06\\DrinkTest" +
@@ -101,7 +100,7 @@ zusammenhang zwischen abstrakt und ueberladen?!
 - bin leicht unsicher ob ich jemals oberklasse objekt in unterklasse objekt erzeugen kann weil fehlermeldung reason: actual and formal argument lists differ in length
 - Geht nicht!
 
-```java 
+```java
 Sub sub = new Super();
 // throwt java: incompatible types: Super cannot be converted to Sub
 ```

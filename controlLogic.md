@@ -1,10 +1,10 @@
 # Control Structures I: Logic and Conditions
 
-Control structures are fundamental concepts in programming that allow us to control *how and when* certain blocks of code are executed. 
+Control structures are fundamental concepts in programming that allow us to control *how and when* certain blocks of code are executed.
 
 They introduce decision-making abilities into our programs, enabling them to behave differently based on varying conditions.
 
-In a program, code is generally executed sequentially from top to bottom, following the First-In-First-Out (FIFO) principle. 
+In a program, code is generally executed sequentially from top to bottom, following the First-In-First-Out (FIFO) principle.
 Control structures allow us to break away from this linear execution flow.
 
 In this section, we will first focus on logic operators and conditional statements, which form the basis of decision-making in programming.
