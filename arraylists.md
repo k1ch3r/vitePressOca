@@ -19,7 +19,6 @@ ArrayList<String> list4 = new ArrayList<String>(); // more generics. still dont 
 ArrayList<String> list5 = new ArrayList(list3);
 ArrayList<String> list6 = list3;
 
-
 ```
 
 TODO differences here

@@ -16,9 +16,30 @@ Hi!
 */
 ```
 
-## Javadocs and Beginning Comments
+## Beginning Comments
 
-We also have docstrings. They can be used to generate **Javadocs**. If we do them we **need to** keep them up to date when we make changes! Otherwise they are probably doing more harm than good.
+It is good practice to make a multi line **Beginning Comment** for our source file.  
+This is just intended for people reading the source and will not be parsed as javadoc.  
+It could contain a copyright notice, a brief description of the program, a list of the programmers or a copyright notice:
+
+```java
+/*
+ * HelloApp
+ * 
+ * This is our App to welcome any new Users to our community. It is executed upon registration and can be repeated manually at any point later on.
+ * 
+ * Version 1.02
+ * 
+ * by John, Joe and Max
+ * 
+ * Copyright (c) 2022, John, Joe and Max. All rights reserved.
+ */
+
+```
+
+## Javadocs
+
+We also have docstrings. They can be used to generate **Javadocs**. If we do them we **need to** keep them up to date when we make changes! Otherwise they are probably doing more harm than good. This is a docstring for a method:
 
 ```java
 public class Person {    
@@ -44,26 +65,31 @@ isEmpty() is a prebuilt String method that checks if a String has a length of 0.
 We see the docstring as additional description for the method when we use it in most IDEs independently of using Javadocs to create external docs just like in most other languages.
 :::
 
-It is good practice to make a multi line **Beginning Comment** for our source file. It should contain a copyright notice, a brief description of the program and a list of the programmers:
+## package-info.java
+
+You can make special files to provide documentation for packages:
+
+:::warning
+This file is named **package-info.java**.  
+It is an **exeption** to the rule that does not allow '-' characters in java file names.
+:::
 
 ```java
-/*
- * HelloApp
- * 
- * This is our App to welcome any new Users to our community. It is executed upon registration and can be repeated manually at any point later on.
- * 
- * Version 1.02
- * 
- * by John, Joe and Max
- * 
- * Copyright (c) 2022, John, Joe and Max. All rights reserved.
+/**
+ * This package contains code examples and documentation for learning Java.
+ * <p>
+ * For detailed documentation, visit: https://k1ch3r.github.io/vitePressOca/
+ *
+ * @author Jonas
+ * @version 0.1
  */
+package com.k1ch3r.JavaDocs;
 
 ```
 
 ## Naming Conventions
 
-todo.
+todo:
 
 - packages (com.apple.quicktime.v2)
 - classes (ImageSprite)
@@ -71,6 +97,7 @@ todo.
 - objects are NOT!
 - methods (getBackground());
 - constants (static final int MAX_WIDTH = 999)
+- disallowed characters etc
 
 [okay boomer](https://www.oracle.com/java/technologies/javase/codeconventions-namingconventions.html)
 
