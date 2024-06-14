@@ -1,2 +1,8 @@
 node_modules/
 pnpm-lock.yamls
+.idea/dbnavigator.xml
+.idea/material_theme_project_new.xml
+.idea/modules.xml
+.idea/vcs.xml
+.idea/vitePressOca.iml
+.idea/.gitignore
