@@ -23,7 +23,7 @@ export default defineConfig({
           { text: 'Classes Intro', link: '/classes' },
           { text: 'Primitive Data Types', link: '/primitives' },
           { text: 'Reference Types', link: '/reference' },
-          { text: 'Classes & Methods', link: '/reference' },
+          // { text: 'Classes & Methods', link: '/reference' },
           { text: 'Control Structures I', link: '/controlLogic' },
           // { text: 'Control Structures: Repetition', link: '/reference' },
           { text: 'Scope & Access Modifiers', link: '/scope' },

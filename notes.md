@@ -107,3 +107,8 @@ Sub sub = new Super();
 
 - es gibt glaub ich mehr relevante regeln fuer access modifier als wir bisher hatten sowohl in unterricht als auch ich hier auf der seite?! zb muessen private klassen unterklassen sein?!
 - https://www.w3schools.com/java/java_inner_classes.asp
+
+- enum
+- interface ez lambda wut? xP
+
+- abstract classes: Fields and Constructors: Can have fields and constructors, but constructors are called only through their subclasses. might need to revisit this?!

@@ -5,7 +5,7 @@ The only relevant example of a Java file without a class I know of is a [package
 
 :::tip
 Every Java file with executable code contains at least one class.  
-It cannot be private.
+It cannot be private or protected.
 :::
 
 Classes that are not wrapped inside other classes within the file are called **top-level** classes.
