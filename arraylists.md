@@ -15,13 +15,20 @@ list0.add("LOL!"); // => throws not initialized
 ArrayList<String> list1 = new ArrayList(); // initializes a new empty arraylist
 ArrayList<String> list2 = new ArrayList(10); // sets initial capacity of 10
 ArrayList<String> list3 = new ArrayList<>(); // same as list1 but with generics... idk.
-ArrayList<String> list4 = new ArrayList<String>(); // more generics. still dont know.
+ArrayList<String> list4 = new ArrayList<String>(); // more generics?!12 still dont know.
 ArrayList<String> list5 = new ArrayList(list3);
 ArrayList<String> list6 = list3;
-
 ```
 
-TODO differences here
+[//]: # (@TODO differences here)
+
+We can declare ArrayLists without typing their content as well. They will accept anything they can handle as Object type if we do.
+
+```java
+ArrayList abc = new ArrayList();
+abc.add("lol");
+abc.add(3);       // <- handled as Integer
+```
 
 ## Methods
 

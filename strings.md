@@ -6,6 +6,18 @@ Strings have been introduced when we took a look at [reference types](/reference
 Strings are ***collections of characters***.
 :::
 
+## Immutability
+
+Java Strings are **immutable**. 
+
+:::info
+An immutable object is an object whose internal state remains constant after it has been entirely created.
+:::
+
+This has a few implications we need to keep in mind for both OCA questions and everyday applications.
+
+First of all all String methods have been implemented in a way that does not change anything at the original object. They create a new one and return it. This is different than many other methods that will actually change the values of the memory at the adress they receive afflicting any future readings and destroying the old value forever.
+
 ## Methods
 
 The string class comes with a lot of methods. We need to know at least the following 14 for the OCA exam.  
@@ -63,22 +75,38 @@ String iThink = subStringsHere.substring(0, 5); // I am
 String iThrow = subStringsHere.substring(50, -3); // throws for all the reasons above
 ```
 
-### toLowerCase()
+### toUpperCase(), toLowerCase(), equals()
 
-### toUpperCase()
+These don't really need explanation. First two are Locale dependent but that's beyond my concerns.
 
-### equals()
+### equalsIgnoreCase(), startsWith(), endsWith()
 
-### equalsIgnoreCase()
-
-### startsWith()
-
-### endsWith()
+Same deal. They exist and do what one would expect.
 
 ### contains()
+Takes input String, returns boolean. Maybe you want [indexOf()](strings#indexof) if you need more than a bool.
 
 ### replace()
 
+Takes two input arguments:
+- The first argument is the value for the target to search and replace.
+- The second one is the value to replace targets with.
+
+You can use CharSequence arguments: Either two chars or two Strings.
+Unlike replaceAll() it does **not** work with regEx.
+:::warning
+Use **MATCHING** arguments. 2 Strings or 2 chars.
+:::
+
 ### trim()
 
+Returns input String with **ALL leading** and **ALL trailing** white space characters removed. Does not affect white spaces in between non white space chars.
+
 ### concat()
+
+Takes another String as input and returns concatenated String consisitign of object String and argument String.
+
+### split()
+
+Takes a regEx target as argument. Splits the String into substrings around any matches.  
+Returns an **Array** of Strings.

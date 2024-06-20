@@ -31,7 +31,8 @@ export default defineConfig({
           // { text: 'StringBuilder', link: '/stringBuilder' },
           { text: 'Arrays', link: '/arrays' },
           { text: 'ArrayLists', link: '/arraylists' },
-          { text: 'java.time', link: '/dates' },
+          // { text: 'java.time', link: '/dates' },
+          { text: 'Throwables', link: '/errors' },
 
         ]
       }

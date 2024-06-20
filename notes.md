@@ -112,3 +112,10 @@ Sub sub = new Super();
 - interface ez lambda wut? xP
 
 - abstract classes: Fields and Constructors: Can have fields and constructors, but constructors are called only through their subclasses. might need to revisit this?!
+- lambda jede syntax, predicate
+- hinter override bzw zwischen override und der funktion darf kein semikolon sein
+- klassen koennen nur public oder package private sein, NICHT private oder protected!
+- public void TestClass(long pLong) { l1 = pLong ; }  //(1)  <- ist eine methode, kein konstruktor. wegen void?!
+- alle Wrapper objects sind immutable?! :O
+- local code blocks (!initializer)
+- static vs instance initializer
