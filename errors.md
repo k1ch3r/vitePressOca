@@ -1,5 +1,9 @@
 # Error Handling
 
+While many issues in software development can be caught by IDEs during coding or by compilers during compilation, certain problems only surface **during runtime**.  
+Effective error handling is crucial in managing these scenarios to ensure robustness and reliability in software applications.  
+This page focuses on fundamental concepts provided by Java to address such *runtime-errors*.
+
 ## Terminology
 
 Java error handling is based on a class hierarchy. The superclass of all the error and exception classes is
