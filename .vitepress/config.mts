@@ -16,6 +16,7 @@ export default defineConfig({
       {
         text: 'Content',
         items: [
+          { text: 'About', link: '/about' },
           // { text: 'Markdown Examples', link: '/markdown-examples' },
           // { text: 'Runtime API Examples', link: '/api-examples' }
           { text: 'Intro & Basics', link: '/basics' },
@@ -24,7 +25,7 @@ export default defineConfig({
           { text: 'Primitive Data Types', link: '/primitives' },
           { text: 'Reference Types', link: '/reference' },
           // { text: 'Classes & Methods', link: '/reference' },
-          { text: 'Control Structures I', link: '/controlLogic' },
+          { text: 'Control Structures: if/else & logic', link: '/controlLogic' },
           // { text: 'Control Structures: Repetition', link: '/reference' },
           { text: 'Scope & Access Modifiers', link: '/scope' },
           { text: 'Strings', link: '/strings' },
