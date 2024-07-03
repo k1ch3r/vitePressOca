@@ -81,6 +81,27 @@ Local variable objects should always be initialized in order to prevent compile 
 Methods using instance variable objects should usually be able to handle a possible **NullPointerException**.
 :::
 
+```java
+public class Reference {
+    
+    int hi;
+    void methodVariable() {
+        int x;
+        System.out.println(hi); // works, prints 0
+         // throws might not have been initialized, does not compile:
+        System.out.println(x);
+        
+       switch(1) {
+            case 1:
+            default:
+                x = 4;
+        }
+        // this works bc default is ALWAYS executed (no case with a break)
+        System.out.println(x); 
+    }
+}
+```
+
 ## Comparison, reference copies and cloning
 
 You can compare reference types using == or their equals() Method.

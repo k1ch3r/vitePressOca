@@ -119,3 +119,15 @@ Sub sub = new Super();
 - alle Wrapper objects sind immutable?! :O
 - local code blocks (!initializer)
 - static vs instance initializer
+- "As in C and C++, the Java if statement suffers from the so-called "dangling else problem," The problem is that both the outer if statement and the inner if statement might conceivably own the else clause. In this example, one might be tempted to assume that the programmer intended the else clause to belong to the outer if statement.  The Java language, like C and C++ and many languages before them, arbitrarily decree that an else clause belongs to the innermost if so as the first if() condition fails (args[0] not being "open") there is no else associated to execute. So, the program does nothing. The else actually is associated with the second if. So had the command line been : java Test open, it would have executed the second if and thrown ArrayIndexOutOfBoundsException. If the command line had been: java Test open xyz, it would execute the else part(which is associated with the second if) and would have printed "Go away xyz"."  -> if in doubt else is of the innermost if
+- (b2 = b1 == false) does 1. b1 == false evaluation. lets say thats true: it then does b2 = true, setting b2 to true. finally it returns the value of b2 -> returns true
+-       int x  = ( x=3 ) * 4;  works, sets x t 12 like this: x = 3 first. then 3*4 = 12. then x = 12.
+- default label can be ANYWHERE in a switch, does not have to be last or first or anything.
+- stringbuilders are mutable (-> their global value can be changed in a method)
+- labels "You can apply a label to any code block or a block level statement (such as a for statement) but not to declarations. For example: loopX : int i = 10;"
+- break loop with a label for a block SURROUNDING a try catch inside the try will still exectue the finally before breaking
+- if you put a string into an object variable bc of polymorphism will use the overwritten string methods, not the object methods.... -> tostring prints the string, not its address
+- you CAN use a constant in a switch switch (1) { default : break; } but you cant use break in an if with no loop around it if (true) { break ; } (When not inside a switch block or a loop)
+- ALL INSTANCE VARIABLES ARE INITIALIZED TO DEFAULT VALUES!!!!!!
+-  Note that automatic variables (also called as method local variables i.e. variables declared within a method) have to be explicitly initialized. -> method variables are NOT instance variables!
+- you cant have a static and non static method with the same name for a class

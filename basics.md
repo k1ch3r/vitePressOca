@@ -2,11 +2,11 @@
 
 ## Day 1 prep
 
-We installed JRE and JDK Version 8u411, added them to our path and compiled a .java file via javac in our shell.
+Install JRE and JDK Version 8u411 and add them to your path. We are expected to be able to compile a .java file via javac in our shell.
 
 ## Packages and File Structure
 
-We talked about  packages and folders and took  a look at the prebuilts in the jdk.
+The Package and Folder System needs to be understood.
 Note: OCA will ask about rules for imports/when you need to import.
 Your projects file structure should match the package syntax.
 
