@@ -90,4 +90,8 @@ There are things that take precedence over break and continue. Continue will sti
 Default statements in switches will not be executed if they appear after a case that broke the switch. (more on breaking switches in the next chapter)  
 Breaking inside a try or catch block will not stop the finally block from being executed.
 
-Since all the code after a break or continue statement will be *unreachable* they are usually used *conditionally* inside a block to control *when* subsequent statements are executed.
+Since all the code after a break or continue statement will be *unreachable* they are usually used *conditionally* within a block to control *when* subsequent statements are executed.
+
+:::warning
+Java will not compile if it recognizes code ALWAYS being unreachable.
+:::
