@@ -4,7 +4,7 @@ The next step from conditional blocks are *loops*. They usually also have a cond
 
 ## while()
 
-A while loop behaves the same as an if() block, it just repeeats as long as the condition is met.
+A while loop behaves the same as an if() block, but it repeats as long as the condition is met.
 
 ```java
 // good code.
@@ -40,7 +40,7 @@ for(int i = 0; i < 10; i++)  System.out.println("duuuh no " + i);
 
 You can declare multiple variables in the first part, but they all *need to share the same type*.  
 
-The second part where you define your condition needs to evaluate to a boolean value. The only exception is leaving it empty. As we saw above it will just be *true* then.  
+The second part (where you define your condition) needs to evaluate to a boolean value. The only exception is leaving it empty. As we saw above it will just be *true* then.  
 
 The third part can change any variables we can access from the loop and will be excecuted after the code inside the loop is finished. (obv you should use this in ways that help readibility and not hurt it)
 
@@ -67,7 +67,7 @@ strs.add("funny");
 for(String str : strs) System.out.println(str);
 ```
 
-This way we can easily get references to all of the items in collections. We can reference non value elements of maps as well. If we are iterating over objects we can use the current reference for methods and fields.
+This way we can easily get references to all of the items in collections. We can reference non-value elements of maps as well. If we are iterating over objects we can use the current reference for methods and fields.
 
 ```java 
 HashMap<String, String> keyValuePairs = new HashMap<>();
