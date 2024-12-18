@@ -1,6 +1,23 @@
 # Reference Types in Java
 
-Every other data type that was not mentioned in the primitive type description is a reference type. Reference types start with an uppercase letter. They are called reference type because unlike primitives they don't store actual values themselves. Instead they store references to where data is stored. We will take a first look at important reference types here. We will go into more details about working some of them later in seperate sections.
+Every other data type that was not mentioned in the [Primitive Data Types](./primitives)
+Section is a *reference type*.  
+By convention the reference types always start with an uppercase letter.  
+They are called reference type because unlike primitives they don't store actual values themselves. Instead they store *references* to where data is stored.  
+
+```Java
+        // Declaring an array, which is a reference type
+        String[] names = {"joe", "mike" };
+        /* 
+        we capitalize "String" here, because it is a reference type.
+        we do NOT capitalize "names" because it is a variable name.
+        */
+        // This prints the reference address
+        System.out.println("Reference address of the names array: " + names);
+        // [Ljava.lang.String;@7344699f
+```
+
+We will take a first look at important reference types here and go into more details about some of them later in separate sections.
 
 ## Classes and Objects
 
@@ -11,7 +28,7 @@ Every other data type that was not mentioned in the primitive type description i
 
 ## Strings
 
-One of the first reference types to get familiar with is the String type. Strings are collections of characters and used for all kind of text processing.
+One of the first reference types to get familiar with is the String type. Strings are collections of characters and used for all kinds of text processing.
 
 :::warning
 In java String are **always** delimited with **double quotes**! Single quotes are used for char type values **only**!
@@ -31,7 +48,7 @@ In Java Arrays are a *collection of elements **of the same type***. They are dec
 int[] myArray = new int[5];
 ```
 
-Their length **has to** be defined when declaring them and *cannot* be changed afterwards. If you don't set specific values for elements when declaring an array they are given a **default value**. If the array is holding primitives their default value is whatever all bits off is interpreted as. If it is holding reference types their default values are set to **null**.
+Their length **has to** be defined when declaring them and **cannot** be changed afterwards. If you don't set specific values for elements when declaring an array they are given a **default value**. If the array is holding primitives their default value is whatever all bits off is interpreted as. If it is holding reference types their default values are set to **null**.
 
 :::details
 Here's a list of default values for primitives as a refresher:
@@ -52,10 +69,17 @@ tbd in own section: anonymous arrays.
 
 ```java
 // a named Array:
-int[] luckyNumbers = new int[] {7, 13, 21};
-// using an anonymous array:
-int totalWinnings = sum(new int[] {3000, 4500, 5000});
+int[] luckyNumbers = { 7, 13, 21 };
 
+// using an anonymous array:
+import java.util.stream.IntStream;
+
+public class MyClass {
+    public static void main(String args[]) {
+        int totalWinnings = IntStream.of(new int[] {3000, 4500, 5000}).sum();
+        System.out.println(totalWinnings); // 12500
+    }
+}
 ```
 
 :::warning

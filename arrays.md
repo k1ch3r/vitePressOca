@@ -78,6 +78,12 @@ Pretty niche use case probably.
 
 ## Methods
 
+We need to import the `java.util.Arrays` class to use these.
+
+```java
+import java.util.Arrays;
+```
+
 ### Arrays.toString()
 
 This is a quick and basic way to look at the contents of an Array. It is needed because referencing the array itself without calling a method only returns the memory address.
