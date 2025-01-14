@@ -25,6 +25,7 @@ export default defineConfig({
           { text: 'Primitive Data Types', link: '/primitives' },
           { text: 'Reference Types', link: '/reference' },
           // { text: 'Classes & Methods', link: '/reference' },
+          { text: 'Interfaces', link: '/interfaces' },
           { text: 'Control Structures: if/else & logic', link: '/controlLogic' },
           { text: 'CS: Loops & Labels', link: '/loops' },
           { text: 'CS: Switch Statements', link: '/switch' },
